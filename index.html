@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetable</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <video autoplay muted loop>
+    <source src="zenitsu.mp4" type="video/mp4" />
+  </video>
+  <div class="container" id="ctn_1">
+    <div class="time">
+      <div class="timehead">
+        <h1>Time</h1>
+      </div>
+      <h2>09:00 to 10:00</h2>
+      <h2>10:00 to 11:00</h2>
+      <h2>11:00 to 12:00</h2>
+      <h2>12:00 to 01:00</h2>
+      <h2>01:00 to 02:00</h2>
+      <h2>02:00 to 03:00</h2>
+      <h2>03:00 to 04:00</h2>
+      <h2>04:00 to 05:00</h2>
+      <h2>05:00 to 06:00</h2>
+    </div>
+    <div class="card">
+      <div class="days">
+        <H1>Mon</H1>
+      </div>
+      <h2>PYTHON</h2>
+      <h2>LSE</h2>
+      <h2>LSE LAB</h2>
+      <h2>LSE LAB</h2>
+      <h2  style="visibility: hidden;">BREAK</h2>
+      <h2>CHEM</h2>
+      <h2>MATH</h2>
+      <h2>BEEE</h2>
+      <h2></h2>
+      <h2></h2>
+      </div>
+    <div class="card">
+      <div class="days">
+        <H1>Tues</H1>
+      </div>
+      <h2>PYTHON LAB</h2>
+      <h2>PYTHON LAB</h2>
+      <h2  style="visibility: hidden;" >STUDENT LIFE</h2>
+      <h2  style="visibility: hidden;" >STUDENT LIFE</h2>
+      <h2  style="visibility: hidden;" >STUDENT LIFE</h2>
+      <h2>MATHS</h2>
+      <h2>GRAPICS</h2>
+      <h2 style="visibility: hidden;" >BREAK</h2>
+      <h2>SKILL DEV</h2>
+    </div>
+    <div class="card">
+      <div class="days">
+        <H1>Wed</H1>
+      </div>
+      <h2>BEEE</h2>
+      <h2>SKILL DEV</h2>
+      <h2>CHEM</h2>
+      <h2 style="visibility: hidden;">BREAK</h2>
+      <h2>BEE LAB</h2>
+      <h2>BEEE LAB</h2>
+      <h2 style="visibility: hidden;">BREAK</h2>
+      <h2>LSE</h2>
+      <h2>CODING</h2>
+    </div>
+    <div class="card">
+      <div class="days">
+        <H1>Thu</H1>
+      </div>
+      <h2>GRAPHIC LAB</h2>
+      <h2>GRAPHIC LAB</h2>
+      <h2 style="visibility: hidden;">STUDENT LIFE</h2>
+      <h2 style="visibility: hidden;">STUDENT LIFE</h2>
+      <h2 style="visibility: hidden;">STUDENT LIFE</h2>
+      <h2>CHEM LAB</h2>
+      <h2>CHEM LAB</h2>
+      <h2>BEEE</h2>
+      <h2>CODING</h2>
+    </div>
+    <div class="card">
+      <div class="days">
+        <H1>Fri</H1>
+      </div>
+      <h2 style="visibility: hidden;">NO CLASS</h2>
+      <h2>PYTHON</h2>
+      <h2>NSS</h2>
+      <h2>NSS</h2>
+      <h2 style="visibility: hidden;">BREAK</h2>
+      <h2>CHEM</h2>
+      <h2>MATH</h2>
+      <h2>BEEE</h2>
+      <h2></h2>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 400
+	}); 
+  </script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".time"),{
+		max: 25,
+		speed: 400
+	}); 
+  </script>
+  <script>
+    const portrait = window.matchMedia("orientation: portrait)") .matches;
+  </script>
+  
+</body>
+
+</html>
